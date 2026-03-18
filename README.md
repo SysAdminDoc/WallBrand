@@ -1,11 +1,9 @@
 # WallBrand
-<<<<<<< HEAD
 A wallpaper branding tool with GUI and CLI modes
 
 
 ![Screenshot](screenshot.png)
 
-=======
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Language](https://img.shields.io/badge/language-PowerShell-5391FE)
@@ -42,4 +40,3 @@ A wallpaper branding tool with GUI and CLI modes. Add logos, watermarks, and tex
 ## License
 
 MIT License
->>>>>>> 227aee8e4785afb7b11395040d847bf4c7d0429c
