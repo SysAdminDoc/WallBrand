@@ -1644,6 +1644,15 @@ function Show-WallBrandProGUI {
     $reader = New-Object System.Xml.XmlNodeReader($xaml)
     $window = [Windows.Markup.XamlReader]::Load($reader)
     
+# codex-branding:start
+                try {
+                    $brandingIconPath = Join-Path $PSScriptRoot 'icon.ico'
+                    if (Test-Path $brandingIconPath) {
+                        $window.Icon = [System.Windows.Media.Imaging.BitmapFrame]::Create((New-Object System.Uri($brandingIconPath)))
+                    }
+                } catch {
+                }
+                # codex-branding:end
     # Get controls
     $txtWallpaper = $window.FindName("txtWallpaper")
     $btnBrowseWallpaper = $window.FindName("btnBrowseWallpaper")
